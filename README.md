@@ -15,11 +15,13 @@ DelaunayTriangulation:  // A tree-based divide and conquer solution
 Time Complexity: 
 Locate the site that point lies in is O(nlog⁡n);
 Update the illegal edges takes O(n), because the expected number of triangles created by algorithm DelaunayTriangulation is at most 9n+1. The whole algorithm is O(nlog⁡n).
-![Alt text]( DelaunayTriangulation/screenshot02.png?raw=true "")<br />
-source point dataset
 
+sample source dataset:
+![Alt text]( DelaunayTriangulation/screenshot02.png?raw=true "")<br />
+
+delaunay triangulation result:
 ![Alt text]( DelaunayTriangulation/screenshot01.png?raw=true "")<br />
-delaunay triangulation result
+
 
 ### Sweep line algorithm for circle crossing<br />
 ![Alt text]( sweepcircles_semi/screenshot01.jpg?raw=true "")<br />
