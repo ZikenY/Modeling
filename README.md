@@ -16,10 +16,10 @@ Time Complexity:
 Locate the site that point lies in is O(nlog⁡n);
 Update the illegal edges takes O(n), because the expected number of triangles created by algorithm DelaunayTriangulation is at most 9n+1. The whole algorithm is O(nlog⁡n).
 
-sample source dataset:
+sample source dataset:<br />
 ![Alt text]( DelaunayTriangulation/screenshot02.png?raw=true "")<br />
 
-delaunay triangulation result:
+delaunay triangulation result:<br />
 ![Alt text]( DelaunayTriangulation/screenshot01.png?raw=true "")<br />
 
 
