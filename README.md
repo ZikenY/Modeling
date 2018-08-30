@@ -25,3 +25,22 @@ delaunay triangulation result:<br />
 
 ### Sweep line algorithm for circle crossing<br />
 ![Alt text]( sweepcircles_semi/screenshot01.jpg?raw=true "")<br />
+
+### 3D Mesh Morphing<br />
+Goal:
+Morph smile.m to sad.m based on discrete harmonic mapping and G3dogl tool.
+
+Input:
+Two mesh file: smile.m, sad.m; identical vertices stored in a text file.
+
+Output:
+Smile_merged.m with Opos and Onormal fields for each vertex. These two fields are morphing results from smile.m to sad.m.
+
+Processes: 
+Step1. Map sad mesh to a unit disk (2D) with radius 1 by discrete harmonic method;
+Step2. Get identical vertices’ 2D coordinates for sad mesh, and fix them in the unit disk for smile mesh;
+Step3. Map smile mesh to the unit disk with fixed identical vertices;
+Step4. Compute new 3D coordinates and new normal vectors for each vertex in smile mesh based on Barycentric method;
+Step5. Combine new 3D coordinates and new normal vectors with the original smile mesh, and export a combined mesh: smile_merged.m.
+
+![Alt text]( Morphing/morphing.png?raw=true "")<br />
