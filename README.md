@@ -1,4 +1,4 @@
-## Geometry algorithms in 2D (Fall 2015)
+## Geometry algorithms (Fall 2015)
 
 ### Delaunay Triangulation algorithm<br />
 DelaunayTriangulation:  // A tree-based divide and conquer solution<br />
