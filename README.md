@@ -27,20 +27,20 @@ delaunay triangulation result:<br />
 ![Alt text]( sweepcircles_semi/screenshot01.jpg?raw=true "")<br />
 
 ### 3D Mesh Morphing<br />
-Goal:
-Morph smile.m to sad.m based on discrete harmonic mapping and G3dogl tool.
+Goal:<br />
+Morph smile.m to sad.m based on discrete harmonic mapping and G3dogl tool.<br />
 
-Input:
-Two mesh file: smile.m, sad.m; identical vertices stored in a text file.
+Input:<br />
+Two mesh file: smile.m, sad.m; identical vertices stored in a text file.<br />
 
-Output:
-Smile_merged.m with Opos and Onormal fields for each vertex. These two fields are morphing results from smile.m to sad.m.
+Output:<br />
+Smile_merged.m with Opos and Onormal fields for each vertex. These two fields are morphing results from smile.m to sad.m.<br />
 
-Processes: 
-Step1. Map sad mesh to a unit disk (2D) with radius 1 by discrete harmonic method;
-Step2. Get identical vertices’ 2D coordinates for sad mesh, and fix them in the unit disk for smile mesh;
-Step3. Map smile mesh to the unit disk with fixed identical vertices;
-Step4. Compute new 3D coordinates and new normal vectors for each vertex in smile mesh based on Barycentric method;
-Step5. Combine new 3D coordinates and new normal vectors with the original smile mesh, and export a combined mesh: smile_merged.m.
+Processes:<br />
+Step1. Map sad mesh to a unit disk (2D) with radius 1 by discrete harmonic method;<br />
+Step2. Get identical vertices’ 2D coordinates for sad mesh, and fix them in the unit disk for smile mesh;<br />
+Step3. Map smile mesh to the unit disk with fixed identical vertices;<br />
+Step4. Compute new 3D coordinates and new normal vectors for each vertex in smile mesh based on Barycentric method;<br />
+Step5. Combine new 3D coordinates and new normal vectors with the original smile mesh, and export a combined mesh: smile_merged.m.<br />
 
 ![Alt text]( Morphing/morphing.png?raw=true "")<br />
