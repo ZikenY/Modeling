@@ -26,6 +26,10 @@ delaunay triangulation result:<br />
 ### Sweep line algorithm for circle crossing<br />
 ![Alt text]( sweepcircles_semi/screenshot01.jpg?raw=true "")<br />
 
+### 3D Mesh Subdivision<br />
+![Alt text]( Morphing/simplification0.png?raw=true "")<br />
+![Alt text]( Morphing/simplification1.png?raw=true "")<br />
+
 ### 3D Mesh Morphing<br />
 Goal:<br />
 Morph smile.m to sad.m based on discrete harmonic mapping and G3dogl tool.<br />
