@@ -9,7 +9,7 @@
 using namespace MeshLib;
 using namespace ziken;
 
-// circle around the target，compute the new position of the target
+// circle around the target锛宑ompute the new position of the target
 CPoint calcnewposition(CVertex* target, CHalfEdge *halfedge, CMesh *mesh)
 {
     CHalfEdge *work = halfedge;
@@ -140,7 +140,7 @@ void do_subdivision(CMesh &mesh)
     // edge <--> new vertex
     map<CEdge*, CVertex*> edge_newvertex_map;
 
-    // new position map to the corresponding edge(to break the edges)，因为不能在循环里面直接添加点，所以先存起来，拿到外面添加
+    // new position map to the corresponding edge(to break the edges)
     map<CEdge*, CPoint> edge_newposition_map;
 
     cout << "m_verts.size(): " << mesh.m_verts.size() << endl;
@@ -178,7 +178,6 @@ void do_subdivision(CMesh &mesh)
         map<CVertex*, CPoint>::iterator it_newpos = vertics_newpos.find(vertex0);
         if (it_newpos == vertics_newpos.end())
         {
-            // 没有才做
             vertics_newpos.insert(std::pair<CVertex*, CPoint>(vertex0, calcnewposition(vertex0, halfedge, &mesh)));
         }
 
@@ -186,7 +185,6 @@ void do_subdivision(CMesh &mesh)
         it_newpos = vertics_newpos.find(vertex1);
         if (it_newpos == vertics_newpos.end())
         {
-            // 没有才做
             vertics_newpos.insert(std::pair<CVertex*, CPoint>(vertex1, calcnewposition(vertex1, halfedge, &mesh)));
         }
 
