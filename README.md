@@ -26,9 +26,11 @@ delaunay triangulation result:<br />
 ### Sweep line algorithm for circle crossing<br />
 ![Alt text]( sweepcircles_semi/screenshot01.jpg?raw=true "")<br />
 
+
 ### 3D Mesh Subdivision<br />
-![Alt text]( Morphing/simplification0.png?raw=true "")<br />
-![Alt text]( Morphing/simplification1.png?raw=true "")<br />
+![Alt text]( Morphing/subdivision0.png?raw=true "")<br />
+![Alt text]( Morphing/subdivision1.png?raw=true "")<br />
+
 
 ### 3D Mesh Morphing<br />
 Goal:<br />
